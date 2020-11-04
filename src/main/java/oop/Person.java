@@ -25,22 +25,46 @@ public class Person {
     // Instance Methods
     // Getter methods (Accessors)
 
-    public String getName() { return this.name; }
-    public String getAddress() { return this.address; }
-    public int getAge() { return this.age; }
+    public String getName() {
+        return this.name;
+    }
+    public String getAddress() {
+        return this.address;
+    }
+    public int getAge() {
+        return this.age;
+    }
 
     // Setter methods (Mutators)
-    public void setName(String name) { this.name = name; }
-    public void setAddress(String address) { this.address = address; }
-    public void setAge(int age) { this.age = age; }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-    //TODO
+    // DONE
     // Implement toString() method.  Can also be auto generated.
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", age=" + age +
+                '}';
+    }
 
-    //TODO
+
+    //DONE
     // Implement a print() method that simply prints the names
     // and values of each field in Person. Call print() from start().
+    public String print(){
+        return "Person : '" + name + '\'' + " " + '\'' + address +  '\'' + " " + '\'' + age + '\'';
+    }
 
 
 }
